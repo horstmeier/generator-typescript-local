@@ -1,0 +1,26 @@
+{
+  "name": "<%= projectName %>",
+  "main": "./lib/index.js",
+  "typings": "./lib/index.d.ts",
+  "files": [
+    "lib/",
+    "typings/"
+  ],
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+  ],
+  "author": "<%= username %>",
+  "license": "UNLICENSED",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "typescript": "^1.8.10",
+    "typings": "^1.0.4",
+    "rimraf": "*"
+  }
+}

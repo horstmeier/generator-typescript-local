@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "noImplicitAny": true,
+    "removeComments": false,
+    "outDir": "lib",
+    "sourceMap": true,
+    "declaration": true,
+    "target": "es6"
+  },
+
+  "files": [
+    "src/index.ts",
+    "typings/index.d.ts"
+  ]
+
+}
