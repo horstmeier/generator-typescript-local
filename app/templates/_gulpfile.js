@@ -13,9 +13,13 @@ var typings = (process.platform === "win32") ?
     "node_modules/.bin/typings";
 
 
+function doExec(cmd) {
+    execSync(cmd, {cwd: __dirname, stdio: "inherit" });
+}
+
 gulp.task("setmeup", function() {
-    execSync("npm install");
-    execSync("typings install"); 
+    doExec("npm install");
+    doExec("typings install"); 
 });
 
 gulp.task("typescript", ["cleanup"], function() {
@@ -25,11 +29,11 @@ gulp.task("typescript", ["cleanup"], function() {
         console.log(e);
         gulp.start("setmeup");
     }
-    execSync(tsc, {cwd: __dirname});
+    doExec(tsc, {cwd: __dirname});
 });
 
 gulp.task("createLink", ["typescript"], function() {
-    execSync("npm link", {cwd: __dirname});
+    doExec("npm link", {cwd: __dirname});
 });
 
 gulp.task("build", ["createLink"]);

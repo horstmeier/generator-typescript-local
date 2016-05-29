@@ -1,6 +1,6 @@
 {
   "name": "generator-typescript-local",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generator for local typescript modules using npm link and gulp",
   "main": "index.js",
   "scripts": {
