@@ -19,7 +19,7 @@ function doExec(cmd) {
 
 gulp.task("setmeup", function() {
     doExec("npm install");
-    doExec("typings install"); 
+    doExec(typings + " install"); 
 });
 
 gulp.task("typescript", ["cleanup"], function() {
